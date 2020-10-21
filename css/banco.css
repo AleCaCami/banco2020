@@ -1,11 +1,79 @@
 *{margin:0; padding:0;}
 
-.intro-2 {
-    padding:0,
+.header1{background: white;}
+/* ------------------------------------- BODY ------------------------------------ */
+html,body{height: 100%; width: 100%;}
+/* ------------------------------------- CAJAS ----------------------------------- */
+
+/* ------------------------------------- NAVBAR ---------------------------------- */
+.caja01 {margin: 0px; background: rgb(0,37,102,1); }
+.caja01 div[class*='columna'] {padding: 0px; text-align: right; color: white; }
+
+/* cambiar el color de fondo a la barra */
+.nav.navbar-nav.navbar-right li a { color: white; } 
+/* ------------------------------------- IMAGEN ---------------------------------- */
+.caja02 {margin: 0px;}
+.caja02 div[class*='columna'] {padding: 0px;  text-align: center; color: white}
+/* ---------------------------- 3 cajas - 4 cajas - 1 caja ----------------------- */
+.contenedordecajas{margin: 0px; background: rgb(250, 245, 245); }
+
+/*.caja03 {margin-left: 13px; background: rgb(250, 245, 245); width: 70%; display: flex; justify-content: center; }
+.caja03 div[class*='columna'] {padding: 0px; text-align: center; border: 1px; color: white} */
+
+.caja03 {margin-left: 1.5%; margin-right: 5%; width: 95%; display: flex; justify-content: center; }
+.caja03 div[class*='columna'] {margin-top: 2%; padding: 20px; background: rgb(0,37,102,1); text-align: center; border: 1px solid; color: white;}
+.caja03 .columna .caja{float: left; margin:10px; border: 0px solid;padding:5%;}
+
+.caja04 { margin-top: 2%; margin-left: 13.5%; margin-right: 13%; rgb(250, 245, 245); width: 71%; display: flex; justify-content: center; }
+.caja04 div[class*='color1'] {padding: 20px; background: rgb(172,0,0,1); text-align: center; border: 1px solid; color: white;}
+
+@supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
+	#justifica {
+		text-align: justify;
+		-webkit-hyphens: auto; /* A día de hoy aún es necesario el prefijo para soportar a Safari */
+		hyphens: auto;
+	}
 }
 
+.cuerpo{overflow: hidden;}
 
-.view {margin-top: 0px;}
-.navbar {z-index: 1; background-color: rgb(0,37,102,100);}
+.card{background: rgb(0,37,102,1) ; margin:20px; color: white;}
 
-html,body,header,.view {height: 100%;}
+
+
+
+
+
+
+
+/*
+.caja04 {margin: 1px;}
+.caja04 div[class*='columna'] {padding: 0px; 
+                               text-align: center; border: 1px solid; 
+                               color: white; display: flex; flex-direction: row;
+                                flex-;}
+.hijo{background: #00B285;
+        width: 200px;
+        height: 300px;
+        color: #fff;
+        margin: 30px;
+        padding: 20px;
+        font-size: 40px;}
+
+
+.caja05 {margin: 1px;}
+.caja05 div[class*='columna'] {padding: 0px; background: rgb(139, 57, 57); text-align: center; border: 1px solid; color: white}
+
+.caja06 {margin: 1px;}
+.caja06 div[class*='columna'] {padding: 0px; background: rgb(0, 255, 55); text-align: center; border: 1px solid; color: white}
+
+*/
+
+/* ---------------------------- CAJAS FILA DE CUATRO ----------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+
+
+/*
+.acordeonmultiple{background: cornflowerblue;}
+*/

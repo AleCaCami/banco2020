@@ -6,92 +6,167 @@
         <title>Bootstrap</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="shortcut icon" href="favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
-
-        <!-- Bootstrap -->
+        <!------------------->
+        <!-- Bootstrap CSS -->
+        <!------------------->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <link rel="stylesheet" href="css/banco.css">        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        
+        <!-- Estos son CSS propios -->
+        <!-- <link rel="stylesheet" href="css/font.css">   -->
+        <link rel="stylesheet" href="css/flexboxgrid.min.css">
+        <link rel="stylesheet" href="css/banco.css"> 
     </head>
-    <body>
-        <header class="container">
-            <!-- Barra de navegacion con menu tipo hamburguesa -->
-            <!-- Ref: https://mdbootstrap.com/snippets/jquery/mdbootstrap/102543#css-tab-view -->
-            <nav class="navbar navbar-expand-lg navbar-dark black">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo 2.png" alt=""></a>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <!-- este es el icono hamburguesa de bootstrap -->
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto nav "> 
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">La Fundación <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Actividades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Donacion</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Preguntas Frecuentes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Prensa</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Los logos de las redes sociales solo se ven en pantallas grandes -->
-                <div class="d-none d-lg-block">
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link "><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="view intro-2">
-                <!-- <div class="mask rgba-black-strong flex-center"> -->
-                <img class="img-fluid" src="img/estetoscopio2.png" alt="">
-                <div class="container">
-                    <div class="white-text text-center wow fadeInUp">
-                        <h2>Texto 1</h2>
-                        <h5>Texto 2</h5>
-                        <br><p>Texto 3</p>
-                    </div>
-                </div>
-            </div>            
-        </header>
-            
-
-        <main class="text-center my-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <body id="fondo1">
+        <header class="container-fluid header1 p-12"> 
+            <!----------------------------------------------------------------------------------------->            
+            <!------------------------------------- NAVBAR -------------------------------------------->
+            <!----------------------------------------------------------------------------------------->            
+            <div class="container">  
+                <div class="row caja01 around-xs ">
+                    <div class="columna col-12">
+                        <nav class="navbar navbar-dark navbar-expand-md navbar-template">  <!--bg-primary-->
+                            <!-- el bg-light  dentro del nav pone el color -->
+                            <!-- el fixed-top dentro del nav, expande a toda la pagina -->
+                                                             <!-- Logo del banco de sangre -->
+                            <a class="navbar-brand" href="#"><img src="img/manosygota50.png" alt="" class="imgHeader"></a>
+                            <div class="d-flex flex-row order-2 order-sm-3">
+                                <!-- Iconos de redes sociales -->
+                                <ul class="navbar-nav flex-row">
+                                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse order-3 order-md-2" id="navbarNavDropdown">
+                                <!-- Menu -->
+                                <ul class="navbar-nav ml-auto"> 
+                                    <li class="nav-item active"><a class="nav-link" href="#">Actividades</a></li>
+                                    <li class="nav-item">       <a class="nav-link" href="#">Donacion</a></li>
+                                    <li class="nav-item">       <a class="nav-link" href="#">Contacto</a></li>
+                                    <li class="nav-item">       <a class="nav-link" href="#">Prensa</a></li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
-        </main>
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <!----------------------------------------------------------------------------------------->            
+            <!------------------------------------- IMAGEN -------------------------------------------->
+            <!----------------------------------------------------------------------------------------->
+            <div class="container"> 
+                <div class="row caja02 around-xs">
+                    <div class="columna col-12">
+                        <img src="img/estetoscopio1.png"  class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------------------------------------------------------------->            
+            <!-------------------------------------- CAJAS -------------------------------------------->
+            <!----------------------------------------------------------------------------------------->
+            <div class="container"> 
+                <div class="contenedordecajas">
+                    <!--------------------------------- 3 CAJAS AZULES -------------------------------->
+                    <div class="row caja03 justify-content-center"> 
+                        <div class="columna col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <div class="subtitulo">
+                                <h3 class="servicios">
+                                    ¿Quienes Somos?
+                                </h3>
+                            </div>
+                            <div class="contenido">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Hic officiis debitis rerum unde iste ratione temporibus ducimus exercitationem, 
+                                    eveniet ex voluptatum magnam, placeat adipisci atque voluptates quae blanditiis sit sint.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="columna col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <div class="subtitulo">
+                                <h3 class="servicios">
+                                    Nuestra Mision 
+                                </h3>
+                            </div>
+                            <div class="contenido">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Hic officiis debitis rerum unde iste ratione temporibus ducimus exercitationem, 
+                                    eveniet ex voluptatum magnam, placeat adipisci atque voluptates quae blanditiis sit sint.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="columna col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <div class="subtitulo">
+                                <h3 class="servicios">
+                                    Nuestra Vision
+                                </h3>
+                            </div>
+                            <div class="contenido">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Hic officiis debitis rerum unde iste ratione temporibus ducimus exercitationem, 
+                                    eveniet ex voluptatum magnam, placeat adipisci atque voluptates quae blanditiis sit sint.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------------------------------- 4 CAJAS ROJAS -------------------------------->
+                    <div id="justifica" class="row caja04 justify-content-center"> 
+                        <div class="color1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <h3>Titulo 1</h3>
+                            <p>solo son datos simples e importantes para mostrar en la web</p>
+                        </div>
+                        <div class="color1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <p><h3>Columna 2</h3>Datos Simples e Importantes</p> 
+                        </div>
+                        <div class="color1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <p><h3>Columna 3</h3>Datos Simples e Importantes</p>
+                        </div>
+                        <div class="color1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <p><h3>Columna 4</h3>Datos Simples e Importantes</p>
+                        </div>
+                    </div>
+                    <!------------------------------ 1 CAJAS EXPANSIBLE ------------------------------>
+                    <div class="row coldesiete">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Comision Directiva
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------->
+        <!-- Pie de pagina -->
+        <!------------------->
+	    <div class="container">
+            <footer class='container-fluid bg-primary p-2'>
+                <p class="text-center" >&copy; 2020 - derechos reservados</p>
+            </footer> 
+        </div>
+    </header>
+        <!------------------>
+        <!-- Bootstrap JS -->
+        <!------------------>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
